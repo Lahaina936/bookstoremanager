@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.DangkiController">
+   <children>
+      <Label layoutX="75.0" layoutY="121.0" prefHeight="32.0" prefWidth="66.0" text="username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="153.0" prefHeight="32.0" prefWidth="55.0" text="gmail">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="190.0" prefHeight="32.0" prefWidth="66.0" text="password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="225.0" prefHeight="32.0" prefWidth="77.0" text="Adderess">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="144.0" layoutY="125.0" />
+      <TextField fx:id="gmail" layoutX="144.0" layoutY="161.0" prefHeight="19.0" prefWidth="149.0" />
+      <TextField fx:id="password" layoutX="144.0" layoutY="193.0" />
+      <TextField fx:id="adderess" layoutX="144.0" layoutY="229.0" />
+      <Label layoutX="225.0" layoutY="14.0" prefHeight="59.0" prefWidth="200.0" text="ĐĂNG KÍ NGƯỜI DÙNG" textAlignment="CENTER" textFill="#bf4f4f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="213.0" fitWidth="253.0" layoutX="321.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/shopee-book-club-1.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_dangki" layoutX="225.0" layoutY="329.0" mnemonicParsing="false" onAction="#dangki" prefHeight="38.0" prefWidth="156.0" text="ĐĂNG KÍ" textFill="#284ea4" />
+   </children>
+</AnchorPane>

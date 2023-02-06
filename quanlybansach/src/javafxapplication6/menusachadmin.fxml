@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="menubookadmin_form" prefHeight="471.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.MenusachadminController">
+   <children>
+      <AnchorPane layoutY="2.0" prefHeight="471.0" prefWidth="169.0">
+         <children>
+            <Button layoutX="18.0" layoutY="330.0" mnemonicParsing="false" onAction="#availableBooksAdd" prefHeight="33.0" prefWidth="62.0" style="-fx-border-color: #163c97;" text="ADD" textFill="#163c97" />
+            <Button layoutX="98.0" layoutY="330.0" mnemonicParsing="false" onAction="#availableBooksDelete" prefHeight="33.0" prefWidth="62.0" text="DELETE" textFill="#d01515" />
+            <Button layoutX="18.0" layoutY="385.0" mnemonicParsing="false" onAction="#availableBooksUpdate" prefHeight="33.0" prefWidth="62.0" text="UPDATE" textFill="#5e3030" />
+            <Button layoutX="98.0" layoutY="385.0" mnemonicParsing="false" onAction="#availableBooksClear" prefHeight="33.0" prefWidth="62.0" text="CLEAR" />
+            <AnchorPane layoutX="38.0" layoutY="28.0" prefHeight="107.0" prefWidth="101.0" style="-fx-background-color: #e4d4d4;">
+               <children>
+                  <Button layoutY="81.0" mnemonicParsing="false" onAction="#avaialableBooksInsertImage" prefHeight="25.0" prefWidth="101.0" text="import" />
+                  <ImageView fx:id="availableBooks_imageView" fitHeight="97.0" fitWidth="101.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="11.0" layoutY="170.0" text="Bookid" textFill="#613b3b" />
+            <Label layoutX="11.0" layoutY="197.0" text="Name" textFill="#613b3b" />
+            <Label layoutX="11.0" layoutY="225.0" text="Catalog" textFill="#613b3b" />
+            <Label layoutX="11.0" layoutY="254.0" text="Author" textFill="#613b3b" />
+            <Label layoutX="11.0" layoutY="284.0" text="Price" textFill="#613b3b" />
+            <TextField fx:id="availableBooks_bookname" layoutX="56.0" layoutY="193.0" prefHeight="25.0" prefWidth="110.0" />
+            <TextField fx:id="availableBooks_catalog" layoutX="56.0" layoutY="221.0" prefHeight="25.0" prefWidth="110.0" />
+            <TextField fx:id="availableBooks_author" layoutX="56.0" layoutY="250.0" prefHeight="25.0" prefWidth="110.0" />
+            <TextField fx:id="availableBooks_price" layoutX="56.0" layoutY="280.0" prefHeight="25.0" prefWidth="110.0" />
+            <Label fx:id="labelbookid" layoutX="66.0" layoutY="170.0" prefHeight="17.0" prefWidth="76.0" text="0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="179.0" prefHeight="471.0" prefWidth="460.0">
+         <children>
+            <TableView fx:id="availableBooks_tableView" layoutX="-9.0" onMouseClicked="#availableBooksSelect" prefHeight="471.0" prefWidth="470.0">
+              <columns>
+                <TableColumn fx:id="availableBooks_col_bookid" prefWidth="62.0" text="ID BOOK" />
+                <TableColumn fx:id="availableBooks_col_bookname" prefWidth="155.0" text="NAMEBOOK" />
+                  <TableColumn fx:id="availableBooks_col_catalog" prefWidth="76.0" text="CATALOG" />
+                  <TableColumn fx:id="availableBooks_col_author" prefWidth="97.0" text="AUTHOR" />
+                  <TableColumn fx:id="availableBooks_col_price" prefWidth="79.0" text="PRICE" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

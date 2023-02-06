@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.MenuhoadonController">
+   <children>
+      <Label layoutX="222.0" layoutY="14.0" prefHeight="37.0" prefWidth="201.0" text="danh sách đơn hàng" textAlignment="JUSTIFY" textFill="#790202">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="menuhoadon_table" layoutX="5.0" layoutY="57.0" prefHeight="401.0" prefWidth="634.0">
+        <columns>
+          <TableColumn fx:id="col_iddonhang" prefWidth="92.0" text="ID ĐƠN HÀNG" />
+          <TableColumn fx:id="col_idkhachhang" prefWidth="113.0" text="ID KHÁCH HÀNG" />
+            <TableColumn fx:id="col_tenkhachhang" prefWidth="266.0" text="TÊN KHÁCH HÀNG" />
+            <TableColumn fx:id="col_dongia" prefWidth="162.0" text="ĐƠN GIÁ" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

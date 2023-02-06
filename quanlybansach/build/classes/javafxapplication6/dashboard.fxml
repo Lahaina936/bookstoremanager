@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.DashboardController">
+   <children>
+      <Label layoutX="145.0" layoutY="109.0" prefHeight="35.0" prefWidth="162.0" text="Doanh thu" textFill="#1b8d27">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="158.0" prefHeight="35.0" prefWidth="162.0" text="Lượng khách" textFill="#1e159a">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="214.0" prefHeight="44.0" prefWidth="162.0" text="Số đơn" textFill="#650951">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="267.0" prefHeight="50.0" prefWidth="162.0" text="Tiềm năng" textFill="#900b0b">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="doanh_thu" layoutX="325.0" layoutY="107.0" prefHeight="44.0" prefWidth="132.0">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Label fx:id="luong_khach" layoutX="325.0" layoutY="155.0" prefHeight="44.0" prefWidth="132.0">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Label fx:id="so_don" layoutX="325.0" layoutY="214.0" prefHeight="44.0" prefWidth="132.0">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Label fx:id="tiem_nang" layoutX="325.0" layoutY="267.0" prefHeight="44.0" prefWidth="132.0">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

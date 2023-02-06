@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="375.0" prefWidth="498.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+   <children>
+      <TableView layoutX="-2.0" layoutY="6.0" prefHeight="213.0" prefWidth="498.0">
+        <columns>
+          <TableColumn prefWidth="55.0" text="BOOKID" />
+          <TableColumn prefWidth="128.0" text="NAME" />
+            <TableColumn prefWidth="70.0" text="CATALOG" />
+            <TableColumn prefWidth="98.0" text="AUTHOR" />
+            <TableColumn prefWidth="63.0" text="QUANTITY" />
+            <TableColumn prefWidth="82.0" text="PRICE" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="-1.0" layoutY="225.0" prefHeight="150.0" prefWidth="498.0">
+         <children>
+            <AnchorPane layoutY="-4.0" prefHeight="166.0" prefWidth="265.0" style="-fx-background-color: #afaec9;">
+               <children>
+                  <Label layoutX="6.0" layoutY="33.0" text="BOOKID" textFill="#212125" />
+                  <Label layoutX="7.0" layoutY="68.0" text="NAME" textFill="#131314" />
+                  <Label fx:id="label_bookidcart" layoutX="57.0" layoutY="33.0" prefHeight="17.0" prefWidth="69.0" />
+                  <Label layoutY="136.0" prefHeight="17.0" prefWidth="46.0" text="quantity" />
+                  <Spinner fx:id="spin_quantity" layoutX="41.0" layoutY="132.0" prefHeight="25.0" prefWidth="58.0" />
+                  <Label fx:id="label_namebookcart" layoutX="57.0" layoutY="68.0" prefHeight="17.0" prefWidth="113.0" />
+                  <ImageView fx:id="imagebook_cart" fitHeight="86.0" fitWidth="93.0" layoutX="134.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="323.0" layoutY="258.0" prefHeight="28.0" prefWidth="60.0" text="TOTAL">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_totalcart" layoutX="395.0" layoutY="260.0" text="0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_pay" layoutX="356.0" layoutY="328.0" mnemonicParsing="false" onAction="#pay" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #357380;" text="PAY" textFill="WHITE" />
+   </children>
+</AnchorPane>
